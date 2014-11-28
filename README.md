@@ -1,4 +1,12 @@
-## Introduction
+## Project Summary
+
+As this assignment requests, I've created 4 plots (labelled PlotN.png) along with their generating R source code (called PlotN.R).
+
+The assignment asked to use a subset of the Household Power Consumption data, which I manually extracted in Notepad++ and included here (only 180kb).
+
+Happy grading!
+
+## Assignment Introduction
 
 This assignment uses data from
 the <a href="http://archive.ics.uci.edu/ml/">UC Irvine Machine
