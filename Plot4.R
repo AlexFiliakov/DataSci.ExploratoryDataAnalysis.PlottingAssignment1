@@ -18,8 +18,8 @@ dates<-paste(dates[1,],dates[2,],dates[3,],sep="/")
 data$DateTime<-strptime(paste(dates,data$Time),format="%d/%m/%Y %H:%M:%S")
 
 #create our plots
-png(filename="C:/Users/afiliakov/R/Coursera/ExpData/ExData_Plotting1/Plot4.png",
-    width=504,height=504,bg="white")
+png(filename="C:/Users/afiliakov/R/Coursera/ExpData/ExData_Plotting1/plot4.png",
+    width=504,height=504,bg="transparent")
 par(mfrow=c(2,2))
 
 #top left plot

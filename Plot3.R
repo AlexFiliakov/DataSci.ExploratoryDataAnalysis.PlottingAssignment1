@@ -18,8 +18,8 @@ dates<-paste(dates[1,],dates[2,],dates[3,],sep="/")
 data$DateTime<-strptime(paste(dates,data$Time),format="%d/%m/%Y %H:%M:%S")
 
 #create our plot
-png(filename="C:/Users/afiliakov/R/Coursera/ExpData/ExData_Plotting1/Plot3.png",
-        width=504,height=504,bg="white")
+png(filename="C:/Users/afiliakov/R/Coursera/ExpData/ExData_Plotting1/plot3.png",
+        width=504,height=504,bg="transparent")
 plot(rep(data$DateTime,3),c(data$Sub_metering_1,data$Sub_metering_2,data$Sub_metering_3),
      xlab="",ylab="Energy sub metering",main="",type="n")
 lines(data$DateTime,data$Sub_metering_1,col="black")

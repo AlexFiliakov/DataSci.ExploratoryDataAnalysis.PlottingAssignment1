@@ -1,7 +1,7 @@
 ### This file reads a subset of household power consumption data (edited to be from Feb 1 2007 to Feb 2 2007)
 ### and outputs Plot 1 as specified in the Coursera Exploratory Data Analysis Project 1
 
-#source("C:/Users/afiliakov/R/Coursera/ExpData/ExData_Plotting1/Plot1.R")
+#source("C:/Users/afiliakov/R/Coursera/ExpData/ExData_Plotting1/plot1.R")
 data<-read.table("C:/Users/afiliakov/R/Coursera/ExpData/ExData_Plotting1/household_power_consumption-feb1-feb2-2007.txt",
                     sep=";",
                     header=T)
@@ -19,7 +19,7 @@ dates<-paste(dates[1,],dates[2,],dates[3,],sep="/")
 data$DateTime<-strptime(paste(dates,data$Time),format="%d/%m/%Y %H:%M:%S")
 
 #create our plot
-png(filename="C:/Users/afiliakov/R/Coursera/ExpData/ExData_Plotting1/Plot1.png",
-    width=504,height=504,bg="white")
+png(filename="C:/Users/afiliakov/R/Coursera/ExpData/ExData_Plotting1/plot1.png",
+    width=504,height=504,bg="transparent")
 hist(data$Global_active_power,col="red",xlab="Global Active Power (kilowatts)",ylab="Frequency",main="Global Active Power")
 dev.off()
